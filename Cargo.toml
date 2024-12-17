@@ -1,0 +1,18 @@
+[package]
+name = "deadpool-tiberius-transactions"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tiberius = "0.12.3"
+deadpool-tiberius = "0.1.8"
+async-convert = "1.0.0"
+async-dropper = { version = "0.3.1", features = ["derive", "tokio"] }
+tokio = { version = "1.42.0", features = ["macros"] }
+thiserror = "2.0.7"
+
+[dev-dependencies]
+dotenvy = "0.15.7"
+dotenvy_macro = "0.15.7"
